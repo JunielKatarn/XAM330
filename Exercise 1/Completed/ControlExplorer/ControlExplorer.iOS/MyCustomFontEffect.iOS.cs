@@ -1,4 +1,3 @@
-using System.ComponentModel;
 using CustomFont.iOS;
 using UIKit;
 using Xamarin.Forms;
@@ -31,11 +30,6 @@ namespace CustomFont.iOS
                 var label = Control as UILabel;
                 label.Font = oldFont;
             }
-        }
-
-        protected override void OnElementPropertyChanged(PropertyChangedEventArgs args)
-        {
-            base.OnElementPropertyChanged(args);
         }
     }
 }

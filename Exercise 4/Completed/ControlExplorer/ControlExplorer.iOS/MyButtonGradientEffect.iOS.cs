@@ -32,11 +32,26 @@ namespace ControlExplorer.iOS
             var xfButton = Element as Button;
 
             var colorTop = xfButton.BackgroundColor;
-            var colorBottom = Color.Black;
+            var colorBottom = ButtonGradientEffect.GetGradientColor(xfButton);
 
 			gradLayer = Gradient.GetGradientLayer(colorTop.ToCGColor(), colorBottom.ToCGColor(), (float)xfButton.Width, (float)xfButton.Height);
 
 			Control.Layer.InsertSublayer(gradLayer, 0);
 		}
-	}
+
+        protected override void OnElementPropertyChanged(PropertyChangedEventArgs args)
+        {
+            base.OnElementPropertyChanged(args);
+
+            if (Element is Button == false)
+                return;
+
+            if (args.PropertyName == ControlExplorer.ButtonGradientEffect.GradientColorProperty.PropertyName
+                || args.PropertyName == VisualElement.WidthProperty.PropertyName
+                || args.PropertyName == VisualElement.HeightProperty.PropertyName)
+            {
+                SetGradient();
+            }
+        }
+    }
 }

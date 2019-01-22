@@ -25,6 +25,9 @@ namespace ControlExplorer.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
+            UISwitch.Appearance.OnTintColor = UIColor.Orange;
+            UISlider.Appearance.MinimumTrackTintColor = UIColor.Cyan;
+            UISlider.Appearance.MaximumTrackTintColor = UIColor.Red;
 
             return base.FinishedLaunching(app, options);
         }

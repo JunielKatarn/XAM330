@@ -101,6 +101,8 @@
     <ITunesArtwork Include="iTunesArtwork@2x" />
     <BundleResource Include="Resources\Pacifico.ttf" />
     <None Include="packages.config" />
+    <Compile Include="Gradient.iOS.cs" />
+    <Compile Include="MyButtonGradientEffect.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />

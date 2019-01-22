@@ -34,3 +34,7 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+
+[assembly: Xamarin.Forms.ResolutionGroupName("Xamarin")]
+[assembly: Xamarin.Forms.ExportEffect(typeof(CustomFont.iOS.MyCustomFontEffect), "CustomFontEffect")]
+[assembly: Xamarin.Forms.ExportEffect(typeof(ControlExplorer.iOS.MyButtonGradientEffect), "ButtonGradientEffect")]

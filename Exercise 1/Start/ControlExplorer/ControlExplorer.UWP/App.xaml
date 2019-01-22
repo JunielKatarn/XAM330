@@ -5,4 +5,11 @@
     xmlns:local="using:ControlExplorer.UWP"
     RequestedTheme="Light">
 
+	<Application.Resources>
+		<Style TargetType="Slider">
+			<Setter Property="Background" Value="Purple" />
+			<Setter Property="Foreground" Value="Red" />
+		</Style>
+	</Application.Resources>
+
 </Application>

@@ -3,8 +3,6 @@ using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
-[assembly: ResolutionGroupName("Xamarin")]
-[assembly: ExportEffect(typeof(MyCustomFontEffect), "CustomFontEffect")]
 namespace CustomFont.iOS
 {
     class MyCustomFontEffect : PlatformEffect
